@@ -102,7 +102,8 @@ for elements in periodic_table:
         basis_set = basis_set+function
     elements.update({'b_set': basis_set})
 
-# cursor.executemany()
+# cursor.executemany("""INSERT INTO  pobtzvprev2(n_atom, elem, b_set)
+#                   VALUES (:n_atom, :elem, :b_set)""", periodic_table)
 
 conn.commit()
 
