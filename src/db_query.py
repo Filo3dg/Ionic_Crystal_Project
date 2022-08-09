@@ -44,6 +44,16 @@ def get_bset(element: str):
     return basis_set
 
 
-print(get_bset('Y'))
+def connect_db(db_file):
 
-print(get_bset('Os'))
+    import sqlite3 as sl
+    from sqlite3 import Error
+
+    conn = None
+
+    try:
+        conn = sl.connect(db_file)
+    except Error as e:
+        print(e)
+
+    return conn

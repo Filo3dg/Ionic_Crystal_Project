@@ -1,0 +1,3 @@
+COMPOUND    MPID       ATOMSLIST     TORUN   OPTCONV   FREQCONV    FREQVIRT
+TiO2       mp-2657     ['Ti','O']      -        -         -           -    
+TaAs       mp-1936     ['Ta','As']     -        -         -           -
